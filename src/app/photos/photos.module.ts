@@ -8,19 +8,15 @@ import { PhotosFormComponent } from "./photos-form/photos-form.component";
 import { PhotosComponent } from './photos-list/photos/photos.component';
 import { filterByDescription } from "./photos-list/filter-by-description.pipe";
 import { LoadButtonComponent } from './photos-list/load-button/load-button.component';
+import { PhotoModule } from "./photo/photo.module";
+import { PhotoFormModule } from "./photos-form/photo-form.module";
+import { PhotoListModule } from "./photos-list/photo-list.module";
 
 @NgModule({
-    declarations: [ 
-        PhotoComponent,
-        PhotosListComponent,
-        PhotosFormComponent,
-        PhotosComponent,
-        filterByDescription,
-        LoadButtonComponent 
-    ],
     imports: [
-        HttpClientModule,
-        CommonModule 
+        PhotoModule,
+        PhotoFormModule,
+        PhotoListModule
     ]
 })
 
